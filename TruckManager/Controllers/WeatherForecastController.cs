@@ -13,7 +13,7 @@ namespace TruckManager.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing Rain", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing Rain All Over", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
