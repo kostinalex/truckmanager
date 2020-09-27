@@ -11,6 +11,7 @@ namespace TruckManager.Persistence
     {
 
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         public TruckManagerDbContext(DbContextOptions<TruckManagerDbContext> options)
             : base(options)

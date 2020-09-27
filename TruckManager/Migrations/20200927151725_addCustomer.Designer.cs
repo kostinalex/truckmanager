@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TruckManager.Persistence;
 
 namespace TruckManager.Migrations
 {
     [DbContext(typeof(TruckManagerDbContext))]
-    partial class TruckManagerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200927151725_addCustomer")]
+    partial class addCustomer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
