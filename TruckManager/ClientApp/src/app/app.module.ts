@@ -31,6 +31,7 @@ import { CustomersComponent } from './customers/customers.component';
       { path: 'counter', component: CounterComponent },
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'movies', component: MoviesComponent },
+      { path: 'customers', component: CustomersComponent },
     ])
   ],
   providers: [],
