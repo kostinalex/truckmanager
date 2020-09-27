@@ -1,0 +1,32 @@
+<div class="row" 
+style="background-color: red;color:black;padding:20px;border-radius: 10px;"
+*ngIf="loading">
+    Please wait for the response. It will take about 1 min.
+    <div class="spinner-border text-dark" 
+    role="status"
+    style="margin-left:20px;">
+        <span class="sr-only">Loading...</span>
+      </div>
+</div>
+
+<div [hidden]="loading">
+
+    <table id="stopsTable" class="table table-bordered table-hover" 
+        style="font-size: 12px;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Movie Name</th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr *ngFor="let m of movies">
+                <td>{{m.id}}</td>   
+                <td>{{m.name}}</td>         
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</div>
