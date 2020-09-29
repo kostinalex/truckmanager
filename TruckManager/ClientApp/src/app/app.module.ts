@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MoviesComponent } from './movies/movies.component';
 import { CustomersComponent } from './customers/customers.component';
+import { CustomerFormComponent } from './customer-form/customer-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomersComponent } from './customers/customers.component';
     CounterComponent,
     FetchDataComponent,
     MoviesComponent,
-    CustomersComponent
+    CustomersComponent,
+    CustomerFormComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -32,6 +34,7 @@ import { CustomersComponent } from './customers/customers.component';
       { path: 'fetch-data', component: FetchDataComponent },
       { path: 'movies', component: MoviesComponent },
       { path: 'customers', component: CustomersComponent },
+      { path: 'customer-form', component: CustomerFormComponent },
     ])
   ],
   providers: [],

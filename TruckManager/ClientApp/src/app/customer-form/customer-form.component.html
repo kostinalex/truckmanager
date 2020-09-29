@@ -1,0 +1,39 @@
+<form #customerForm="ngForm" (ngSubmit)="submit(customerForm)">
+  <div class="form-group">
+    <label for="customerName">Customer Name</label>
+    <input ngModel name="customerName"
+           #customerName="ngModel" (change)="log(customerName)"
+           id="customerName"
+           type="text"
+           class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="customerAddress">Customer Address</label>
+    <input ngModel name="customerAddress"
+           #customerAddress="ngModel" (change)="log(customerAddress)"
+           id="customerAddress"
+           type="text"
+           class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <label for="customerAge">Customer Age</label>
+    <input ngModel name="customerAge"
+           #customerAge="ngModel" (change)="log(customerAge)"
+           id="customerAge"
+           type="date"
+           class="form-control" />
+  </div>
+
+  <button class="btn btn-primary">Add Customer</button>
+</form>
+
+<!--<p>Customer name value: {{ customerName.value }}</p>
+<p>Customer name valid: {{ customerName.valid }}</p>
+<p>Customer name value: {{ customerAddress.value }}</p>
+<p>Customer name valid: {{ customerAddress.valid }}</p>
+<p>Customer name value: {{ customerAge.value }}</p>
+<p>Customer name valid: {{ customerAge.valid }}</p>-->
+<p>Form value: {{ customerForm.value | json }}</p>
+<p>Form valid: {{ customerForm.valid }}</p>
