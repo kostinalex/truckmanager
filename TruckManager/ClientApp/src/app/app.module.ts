@@ -12,6 +12,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { MoviesComponent } from './movies/movies.component';
 import { CustomersComponent } from './customers/customers.component';
 import { CustomerFormComponent } from './customer-form/customer-form.component';
+import { CustomerService } from './services/customer.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { CustomerFormComponent } from './customer-form/customer-form.component';
       { path: 'customer-form', component: CustomerFormComponent },
     ])
   ],
-  providers: [],
+  providers: [
+    CustomerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-<form #customerForm="ngForm" (ngSubmit)="submit(customerForm)">
+<form #customerForm="ngForm" (ngSubmit)="createCustomer(customerForm)">
   <div class="form-group">
     <label for="customerName">Customer Name</label>
     <input ngModel name="customerName"
